@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B9-A3_Hockey's</title>
+    <!-- DaisyUi Link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CSS Link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Vanila CSS Link-->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Manrope Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c821166b7a.js" crossorigin="anonymous"></script>
+
+    <style>
+        .font-manrope{
+        font-family: "Manrope", sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white font-manrope lg:max-w-[1440px] mx-auto">
+    <header class="lg:max-w-[1440px]">
+    <!-- This is Start Navbar Section -->
+         <nav class="lg:w-[1170px] mx-auto lg:mt-[45px] lg:mb-8 mb-2">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2  rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost font-extrabold text-2xl lg:text-4xl">Hockey <span class="text-[#FF4240]">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-xl font-manrope">
+                   <li><a class="text-[#FF4240]">Home</a></li>
+                   <li><a>About</a></li>
+                   <li><a>Pages</a></li>
+                   <li><a>Blog</a></li>
+                   <li><a>Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end flex lg:gap-3">
+                    <svg class="hidden lg:flex" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <g clip-path="url(#clip0_5_6)">
+                          <path d="M3 10C3 10.9193 3.18106 11.8295 3.53284 12.6788C3.88463 13.5281 4.40024 14.2997 5.05025 14.9497C5.70026 15.5998 6.47194 16.1154 7.32122 16.4672C8.1705 16.8189 9.08075 17 10 17C10.9193 17 11.8295 16.8189 12.6788 16.4672C13.5281 16.1154 14.2997 15.5998 14.9497 14.9497C15.5998 14.2997 16.1154 13.5281 16.4672 12.6788C16.8189 11.8295 17 10.9193 17 10C17 9.08075 16.8189 8.1705 16.4672 7.32122C16.1154 6.47194 15.5998 5.70026 14.9497 5.05025C14.2997 4.40024 13.5281 3.88463 12.6788 3.53284C11.8295 3.18106 10.9193 3 10 3C9.08075 3 8.1705 3.18106 7.32122 3.53284C6.47194 3.88463 5.70026 4.40024 5.05025 5.05025C4.40024 5.70026 3.88463 6.47194 3.53284 7.32122C3.18106 8.1705 3 9.08075 3 10Z" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M21 21L15 15" stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_5_6">
+                            <rect width="24" height="24" fill="white"/>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                  <a class="btn bg-orange-600 text-white">
+                    Get Ticket</a>
+                </div>
+              </div>
+        </nav>
+    <!-- This is End Navbar Section  -->
+
+
+    <!-- This is the banner section start -->
+    <section class="container mx-auto w-full object-cover lg:w-[1170px] h-[400px] lg:h-[550px]">
+        <div class="carousel bg-bike-primary-bg ">
+            <!-- slide 1 -->
+            <div id="slide1" class="carousel-item relative ">
+                    <img src="Images/1.png" class="lg:w-full lg:h-auto w-[35%]" />
+                    <div class="absolute flex gap-4 lg:left-10 left-20 bottom-5 lg:bottom-10">
+                            <a href="#slide2" class="btn btn-circle bg-black text-white">❮</a> 
+                            <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
+                        
+                    </div>
+            </div> 
+            <!-- slide 2 -->
+            <div id="slide2" class="carousel-item relative">
+                    <img src="Images/1.png" class="lg:w-full lg:h-auto w-[35%]" />
+                    <div class="absolute flex gap-4 lg:left-10 left-20 bottom-5 lg:bottom-10">
+                      <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a> 
+                      <a href="#slide1" class="btn btn-circle bg-black text-white">❯</a>
+                    </div>
+            </div> 
+          </div>
+
+          <div class="absolute lg:w-[540px] w-[340px]  lg:h-[165px] bg-black  text-white lg:bottom-40  lg:ml-[560px] rounded-2xl">
+            <h1 class="text-2xl px-5 py-5">Meet all the heroes from the field</h1>
+            <p class="text-l px-5 pb-5 text-[#FFFFFF99]">Once you give me a bit more about the field, I can introduce you to a diverse group of heroes</p>
+          </div>
+    </section>
+    <!-- This is the banner section end -->
+    </header>
+
+    <main class="container  lg:max-w-[1440px]:">
+        <!-- This is the Professional Hockeys Club start -->
+        <section class="text-center lg:my-[132px]">
+            <h2 class="lg:text-5xl text-[25px] font-extrabold mb-5">Professional Hockeys Club</h2>
+            <p class="lg:max-w-3xl mb-11 mx-auto">Professional hockey clubs are usually members of established professional leagues.These clubs are composed of skilled and talented athletes who play ice hockey at a competitive level </p>
+            <!-- Professional Hockeys ClubCard Container -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:px-[135px]">
+                    <!-- First Card -->
+                    <div class="card ">
+                        <div class="flex justify-center items-center">
+                            <div class="radial-progress text-[#FF4240]" style="--value:87;" role="progressbar"><span class="text-black text-xl font-extrabold">87%</span></div>
+                        </div>
+                        <div class="card-body">
+                          <h2 class="text-xl font-semibold text-[#131318]">Prayer Facility</h2>
+                          <p class="text-[#131318]">Prayer facility specifically dedicated to religious practices within professional hockey clubs.</p>
+                        </div>
+                    </div>
+                    <!-- Second Card -->
+                    <div class="card">
+                        <div class="flex justify-center items-center">
+                            <div class="radial-progress text-[#49D293]" style="--value:95;" role="progressbar"><span class="text-black text-xl font-extrabold">95%</span></div>
+                        </div>
+                        <div class="card-body">
+                          <h2 class="text-xl font-semibold text-[#131318]">Experienced Coach</h2>
+                          <p class="text-[#131318]">Professional hockey clubs often seek experienced coaches to lead their teams and provide strategic guidance to players</p>
+                        </div>
+                    </div>
+                    <!-- Third Card -->
+                    <div class="card">
+                        <div class="flex justify-center items-center">
+                            <div class="radial-progress text-[#FFB546]" style="--value:90;" role="progressbar"><span class="text-black text-xl font-extrabold">90%</span></div>
+                        </div>
+                        <div class="card-body">
+                          <h2 class="text-xl font-semibold text-[#131318]">Senior Player</h2>
+                          <p class="text-[#131318]">Professional hockey clubs often have senior players who serve as experienced leaders on and off the ice .</p>
+                        </div>
+                    </div>
+                    <!-- Fourth Card -->
+                    <div class="card">
+                        <div class="flex justify-center items-center">
+                            <div class="radial-progress text-[#4C8DF1]" style="--value:80;" role="progressbar"><span class="text-black text-xl font-extrabold">80%</span></div>
+                        </div>
+                        <div class="card-body">
+                          <h2 class="text-xl font-semibold text-[#131318]">Training Ground</h2>
+                          <p class="text-[#131318]">Dedicated training facilities where players undergo physical conditioning, practice their skills, and prepare for upcoming games.</p>
+                        </div>
+                    </div>
+                   
+
+            </div>
+        </section>
+        <!-- This is the Professional Hockeys Club End -->
+
+        <!-- This is the Program Sections Start -->
+        <section class="lg:my-24 my-10 lg:px-[135px]">
+            <h3 class="text-4xl font-bold text-center mb-6">Program Sections</h3>
+            <p class="text-center text-[16px] font-medium mb-8">A professional hockey club could refer to a specific segment or aspect of the club's activities or initiatives.</p>
+
+            <div class="flex lg:flex-row flex-col lg:gap-[24px] gap-4 justify-center items-center">
+                <!-- First Picture  -->
+                <div class="lg:w-[100%] w-[80%] lg:h-[338px] h-auto">
+                    <div class="hero rounded-2xl" style="background-image: url('Images/2.png');">
+                        <div class="hero-overlay rounded-2xl"></div>
+                        <div class="hero-content text-start text-neutral-content mx-[15px] mb-[15px]">
+                          <div class="max-w-md">
+                            <h1 class="mb-5 text-2xl font-extrabold lg:pt-[80px] pt-6 text-white">Junior Program</h1>
+                            <p class="mb-5 text-white">The junior program section of a professional hockey club typically refers to the initiatives and activities aimed at developing young talent within the organization.</p>
+                            <button class="btn bg-[#FF4240] border-0 text-white px-[30px] py-[8px] ">Register Now!</button>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <!-- Second Picture -->
+                <div class="lg:w-[100%] w-[80%] lg:h-[338px] h-auto">
+                    <div class="hero rounded-2xl" style="background-image: url('Images/3.png');">
+                        <div class="hero-overlay rounded-2xl"></div>
+                        <div class="hero-content text-start text-neutral-content mx-[15px] mb-[15px]">
+                          <div class="max-w-md">
+                            <h1 class="mb-5 text-2xl font-extrabold lg:pt-[80px] pt-6 text-white">Teenager Program</h1>
+                            <p class="mb-5 text-white">The teenage program section of a professional hockey club typically refers to initiatives and activities aimed at developing hockey players in their teenage years. </p>
+                        <button class="btn bg-[#FF4240] border-0 text-white px-[30px] py-[8px] ">Register Now!</button>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <!-- Third Picture -->
+            <section class="container mx-auto rounded-2xl lg:h-[450px] h-auto lg:my-0 my-10 ">
+                <div class="hero rounded-2xl lg:w-full lg:h-full w-[300px] h-auto lg:ml-0 ml-10" style="background-image: url('Images/4.png');">
+                    <div class="hero-overlay rounded-2xl"></div>
+                    <div class="hero-content  text-neutral-content">
+                      <div class="text-start mx-[15px] mb-[15px]">
+                        <h1 class="mb-5 text-2xl font-extrabold lg:pt-[200px] text-white">Professional Program</h1>
+                        <p class="mb-5 text-white lg:w-[80%]">The professional program section of a hockey club typically encompasses the activities and initiatives designed for the professional players who compete at the highest level.</p>
+                        <button class="btn bg-[#FF4240] border-0 text-white lg:px-[30px] lg:py-[8px] ">Register Now!</button>
+                      </div>
+                    </div>
+                  </div>
+            </section>
+        </section>
+        <!-- This is the Program Sections End -->
+
+        <!--This is  Our New Products  Start-->
+        <section class="my-24">
+            <h3 class="text-4xl font-bold text-center mb-6">Our New Products</h3>
+            <p class="text-center text-[16px] font-medium mb-8">A Professional hockey club has recently launched new products, you can usually find information on their official website.</p>
+             <!-- Our New Products Card Container -->
+             <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:mx-[100px] gap-4 mt-[80px]">
+                <!-- First Card  -->
+                <div class="card card-side rounded-2xl border-zinc-400 border-2 w-[100%]">
+                    <figure><img class="ml-[30px]" src="Images/5.png" alt=""/></figure>
+                    <div class="card-body lg:p-[32] p-2">
+                        <div class="flex  gap-x-3 font-medium text-[#131318] mb-[12px]">
+                            <img src="Images/Frame 3.png" alt="">
+                            <h2>5.0</h2>
+                            <img src="Images/Frame 4.png" alt="">
+                            <h2>20</h2>
+                            <img src="Images/Frame (2).png" alt="">
+                            <h2>200</h2>
+                        </div>
+                      <h2 class="card-title">World Cup Flags Football</h2>
+                      <p> The flags serve as symbols of national identity <br> and  pride during the whole tournament .</p>
+                      <div class="lg:flex  lg:mt-4">
+                        <span class="text-[#FF4240] font-extrabold mr-[20px]">Price - $22.00</span>
+                        <img src="Images/shop.svg" alt="">
+                        <p class="ml-2 text-[#131318]">Delivery Fee : Free</p>
+                      </div>
+                    </div>
+                </div>
+                <!-- Second Card  -->
+                <div class="card card-side rounded-2xl border-zinc-400 border-2 w-[100%]">
+                    <figure><img class="ml-[30px]" src="Images/6.png" alt=""/></figure>
+                    <div class="card-body lg:p-[32] p-2">
+                        <div class="flex gap-x-3 font-medium text-[#131318] mb-[12px]">
+                            <img src="Images/Frame 3.png" alt="">
+                            <h2>5.0</h2>
+                            <img src="Images/Frame 4.png" alt="">
+                            <h2>20</h2>
+                            <img src="Images/Frame (2).png" alt="">
+                            <h2>200</h2>
+                        </div>
+                      <h2 class="card-title">World Cup Flags Football</h2>
+                      <p>The flags serve as symbols of national identity <br> and  pride during the whole tournament </p>
+                      <div class="lg:flex lg:mt-4">
+                        <span class="text-[#FF4240] font-extrabold mr-[20px]">Price - $22.00</span>
+                        <img src="Images/shop.svg" alt="">
+                        <p class="ml-2 text-[#131318]">Delivery Fee : Free</p>
+                      </div>
+                    </div>
+                </div>
+                <!-- Third Card  -->
+                <div class="card card-side rounded-2xl border-zinc-400 border-2 w-[100%]">
+                    <figure><img class="ml-[30px]" src="Images/7.png" alt=""/></figure>
+                    <div class="card-body lg:p-[32] p-2">
+                        <div class="flex gap-x-3 font-medium text-[#131318] mb-[12px]">
+                            <img src="Images/Frame 3.png" alt="">
+                            <h2>5.0</h2>
+                            <img src="Images/Frame 4.png" alt="">
+                            <h2>20</h2>
+                            <img src="Images/Frame (2).png" alt="">
+                            <h2>200</h2>
+                        </div>
+                      <h2 class="card-title">World Cup Flags Football</h2>
+                      <p>The flags serve as symbols of national identity <br> and  pride during the whole tournament </p>
+                      <div class="lg:flex lg:mt-4">
+                        <span class="text-[#FF4240] font-extrabold mr-[20px]">Price - $22.00</span>
+                        <img src="Images/shop.svg" alt="">
+                        <p class="ml-2 text-[#131318]">Delivery Fee : Free</p>
+                      </div>
+                    </div>
+                </div>
+                <!-- Fourth Card  -->
+                <div class="card card-side rounded-2xl border-zinc-400 border-2 w-[100%]">
+                    <figure><img class="ml-[30px]" src="Images/8.png" alt=""/></figure>
+                    <div class="card-body lg:p-[32] p-2">
+                        <div class="flex gap-x-3 font-medium text-[#131318] mb-[12px]">
+                            <img src="Images/Frame 3.png" alt="">
+                            <h2>5.0</h2>
+                            <img src="Images/Frame 4.png" alt="">
+                            <h2>20</h2>
+                            <img src="Images/Frame (2).png" alt="">
+                            <h2>200</h2>
+                        </div>
+                      <h2 class="card-title">World Cup Flags Football</h2>
+                      <p>The flags serve as symbols of national identity <br> and  pride during the whole tournament </p>
+                      <div class="lg:flex lg:mt-4">
+                        <span class="text-[#FF4240] font-extrabold mr-[20px]">Price - $22.00</span>
+                        <img src="Images/shop.svg" alt="">
+                        <p class="ml-2 text-[#131318]">Delivery Fee : Free</p>
+                      </div>
+                    </div>
+                </div>
+                <!-- Fifth Card  -->
+                <div class="card card-side rounded-2xl border-zinc-400 border-2 w-[100%]">
+                    <figure><img class="ml-[30px]" src="Images/9.png" alt=""/></figure>
+                    <div class="card-body lg:p-[32] p-2">
+                        <div class="flex gap-x-3 font-medium text-[#131318] mb-[12px]">
+                            <img src="Images/Frame 3.png" alt="">
+                            <h2>5.0</h2>
+                            <img src="Images/Frame 4.png" alt="">
+                            <h2>20</h2>
+                            <img src="Images/Frame (2).png" alt="">
+                            <h2>200</h2>
+                        </div>
+                      <h2 class="card-title">World Cup Flags Football</h2>
+                      <p>The flags serve as symbols of national identity <br> and  pride during the whole tournament </p>
+                      <div class="lg:flex lg:mt-4">
+                        <span class="text-[#FF4240] font-extrabold mr-[20px]">Price - $22.00</span>
+                        <img src="Images/shop.svg" alt="">
+                        <p class="ml-2 text-[#131318]">Delivery Fee : Free</p>
+                      </div>
+                    </div>
+                </div>
+                <!-- Sixth Card  -->
+                <div class="card card-side rounded-2xl border-zinc-400 border-2 w-[100%]">
+                    <figure><img class="ml-[30px]" src="Images/10.png" alt=""/></figure>
+                    <div class="card-body lg:p-[32] p-2">
+                        <div class="flex gap-x-3 font-medium text-[#131318] mb-[12px]">
+                            <img src="Images/Frame 3.png" alt="">
+                            <h2>5.0</h2>
+                            <img src="Images/Frame 4.png" alt="">
+                            <h2>20</h2>
+                            <img src="Images/Frame (2).png" alt="">
+                            <h2>200</h2>
+                        </div>
+                      <h2 class="card-title">World Cup Flags Football</h2>
+                      <p>The flags serve as symbols of national identity <br> and  pride during the whole tournament </p>
+                      <div class="lg:flex lg:mt-4">
+                        <span class="text-[#FF4240] font-extrabold mr-[20px]">Price - $22.00</span>
+                        <img src="Images/shop.svg" alt="">
+                        <p class="ml-2 text-[#131318]">Delivery Fee : Free</p>
+                      </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!--This is  Our New Products  End-->
+
+        <!-- This is Client Section Start -->
+        <section class="container my-24 mx-auto">
+        <h3 class="text-4xl font-bold text-center mb-6">Clients Question</h3>
+        <p class="text-center text-[16px] font-medium mb-8">Player development team strategies or any other aspect of a professional hockey program.</p>
+
+        <div class="hero mt-12">
+            <div class="hero-content flex-col lg:gap-10 lg:flex-row">
+              <img src="Images/11.png" class="lg:max-w-sm w-3/4 rounded-lg shadow-2xl" />
+
+              <div>
+                <!-- First Question -->
+                <div class="collapse collapse-arrow">
+                    <input type="radio" name="my-accordion-2" checked="checked" /> 
+                    <div class="collapse-title text-xl font-medium">
+                        Our Equipment
+                    </div>
+                    <div class="collapse-content"> 
+                      <p>Professional teams often work closely with equipment sponsors to ensure players have access to top-quality gear that meets safety standards and enhances performance. </p>
+                    </div>
+                  </div>
+                  <!-- Second Question -->
+                  <div class="collapse collapse-arrow">
+                    <input type="radio" name="my-accordion-2" /> 
+                    <div class="collapse-title text-xl font-medium">
+                        Hockey Training
+                    </div>
+                    <div class="collapse-content"> 
+                      <p>Professional teams often work closely with equipment sponsors to ensure players have access to top-quality gear that meets safety standards and enhances performance.</p>
+                    </div>
+                  </div>
+                  <!-- Third Question -->
+                  <div class="collapse collapse-arrow">
+                    <input type="radio" name="my-accordion-2" /> 
+                    <div class="collapse-title text-xl font-medium">
+                        Private Lessons
+                    </div>
+                    <div class="collapse-content"> 
+                      <p>Professional teams often work closely with equipment sponsors to ensure players have access to top-quality gear that meets safety standards and enhances performance.</p>
+                    </div>
+                  </div>
+                  <!-- Fourth Question -->
+                  <div class="collapse collapse-arrow">
+                    <input type="radio" name="my-accordion-2" /> 
+                    <div class="collapse-title text-xl font-medium">
+                        Ski Touring
+                    </div>
+                    <div class="collapse-content"> 
+                      <p>Professional teams often work closely with equipment sponsors to ensure players have access to top-quality gear that meets safety standards and enhances performance.</p>
+                    </div>
+                  </div>
+                <!-- Fifth Question -->
+                <div class="collapse collapse-arrow">
+                <input type="radio" name="my-accordion-2" /> 
+                <div class="collapse-title text-xl font-medium">
+                    Pricings
+                </div>
+                <div class="collapse-content"> 
+                <p>Professional teams often work closely with equipment sponsors to ensure players have access to top-quality gear that meets safety standards and enhances performance.</p>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- This is Client Section End -->
+
+        <!-- This is the Get In Touch section Start -->
+
+         <div class="lg:max-w-[1170px] w-[80%] lg:mx-auto">
+            <hr>
+         </div>
+        <section class="mt-24 mx-auto">
+              <h3 class="text-4xl font-bold text-center mb-6 text-black">Get In Touch</h3>
+              <p class="text-center text-[16px] font-medium mb-8">Some teams have a community relations or outreach department that oversees special programs. </p>
+            <!-- flex container -->
+            <div class="container mx-auto flex lg:flex-row flex-col lg:ml-[135px] pl-5 gap-6 lg:w-[1170px] w-[100%] sm:h-auto">
+                <!-- Flex container end -->
+                <div class="lg:w-[473px] w-[90%] h-auto  lg:p-[50px] border border-[#1313184D] rounded-2xl ">
+                        <div class=" lg:w-[374px] bg-[#BCED6D1A] pl-8 pb-12 pt-8 space-y-3 h-[216px] rounded-2xl shadow-lg mb-6">
+                            <img class="mb-7" src="Images/Group 1171275317.png" alt="">
+                            <p>Phone Number : <br>
+                                (+62) 123-321-543</p>
+                        </div>
+                        <div class=" lg:w-[374px] bg-[#FDDD5F1A] pl-8 pb-12 pt-8 space-y-3 h-[216px] rounded-2xl shadow-lg mb-6">
+                            <img class="mb-7" src="Images/Group 1171275318.png" alt="">
+                            <p>Email : <br>
+                                hockeys@support.com</p>
+                        </div>
+                        <div class=" lg:w-[374px] h-[184px] bg-[#629CF31A] pl-8 pb-12 pt-8 space-y-3  rounded-2xl shadow-lg">
+                            <img class="mb-7" src="Images/Group 1171275321.png" alt="">
+                            <p>Location : <br>
+                                152/1 Mohakhali Wireless Gate</p>
+                        </div>
+                </div>
+                    <!-- This is grid section start -->
+                <div class="grid lg:grid-cols-2 grid-cols-1  lg:h-[774px] h-auto  gap-2" >
+                    <div class="w-[80%]">
+                        <h2 class="font-bold text-black mb-3 text-xl lg:w-[585px] w-[300px]">Your Name</h2>
+                    <input class="w-[300px] bg-[#13131808] h-[64px] rounded-xl p-5" type="text" placeholder="Enter Your Full Name">
+                    </div>
+                    <div class="w-[80%]">
+                        <h2 class="font-bold text-black mb-3 text-xl lg:max-w-[585px] w-[300px]">Your Email</h2>
+                    <input class="w-[300px] bg-[#13131808] h-[64px] rounded-xl p-5" type="text" placeholder="Enter Your email">
+                    </div>
+                    <div class="mt-6">
+                        <h2 class="font-bold text-black mb-3 text-xl lg:max-w-[1170px] w-[300px]">Subject</h2>
+                    <input class="w-[300px] bg-[#13131808] h-[64px] rounded-xl p-5" type="text" placeholder="Enter Your subjects">
+                    </div>
+                    <div class="mt-6 ">
+                        <h2 class="font-bold text-black mb-3 text-xl lg:max-w-[1170px] w-[300px]">Phone Number</h2>
+                    <input class="w-[300px] bg-[#13131808] h-[64px] rounded-xl p-5" type="text" placeholder="Enter your phone number">
+                    </div>
+                    <div class="lg:col-span-2  lg:h-[370px] h-auto mt-6 ">
+                        <h2 class="font-bold text-black mb-3 text-xl">Message</h2>
+                        <textarea class="bg-[#13131808] p-5 rounded-xl font-normal text-[#1313184D] lg:w-[655px] w-[80%]" name="" id="" cols="65" rows="12">Write your message</textarea>
+                    </div>
+                    <div class="mt-8 lg:max-w-[1170px] w-[300px]">
+                        <button class="bg-[#FF4240] py-4 px-5 lg:w-[650px] w-[300px] rounded-lg text-white font-bold">Send Message</button>
+                    </div>
+                   
+                </div>
+                <!-- This is the grid section end -->
+            </div>
+
+        </section>
+        <!-- This is the social section start -->
+            <footer class="footer footer-center  lg:h-auto bg-[#13131808]  rounded-2xl lg:mt-12 mt-5 lg:mb-24 mb-10  lg:w-[1170px] w-[100%] lg:mx-auto  ">
+                 <h2 class="lg:pt-9 text-2xl font-extrabold">Social Media</h2>
+                <nav class=" w-[300px]">
+                    <img class="pb-9  "  src="Images/Social.svg" alt="">
+                </nav> 
+              </footer>
+        <!-- This is the social section end -->
+
+
+        <!-- This is the Get In Touch section End -->
+    </main>
+
+     <!-- This is the footer section start -->
+     <footer class="footer lg:px-[135px] lg:max-w-[1440px]: px-4 py-4 lg:py-[100px] bg-[#131318] text-[#FFFFFF] text-base-content">
+        <aside class="lg:mr-[158px]">
+          <h2 class="text-2xl font-extrabold font-manrope">Get In Touch</h2>
+          <p class="font-manrope mb-6">Some teams have a community relations or outreach <br>
+             department that oversees special programs. </p>
+           
+                <div class="flex justify-center items-center space-x-4 ">
+                    <img src="Images/Frame (1).png" alt=""> <p>hockeys@support.com</p>
+                 </div>
+                 <div class="flex justify-center items-center space-x-2">
+                    <img src="Images/Frame.png" alt=""> <p>
+                       <p>(+62) 123-321-543</p></p>
+                 </div>
+        </aside> 
+        <div class="grid grid-cols-2 lg:grid-cols-3 lg:gap-[120px] gap-[100px]">
+                <nav class="lg:space-y-5">
+                    <header class="footer-title">Company</header> 
+                    <h2>About Us</h2>
+                    <h2>Leadership</h2>
+                    <h2>Careers</h2>
+                    <h2>News & Article</h2>
+                    <h2>Legal Notice</h2>
+              </nav> 
+              <nav class="lg:space-y-5">
+                <header class="footer-title">Support</header> 
+                <h3>Help Center</h3>
+                <h3>FAQ</h3>
+                <h3>Ticket Support</h3>
+                <h3>Contact Us</h3>
+              </nav> 
+              <nav class="lg:space-y-5 ">
+                <header class="footer-title">Services</header> 
+                <h4>Academy</h4>
+                <h4>Group Lesson</h4>
+                <h4>Private Lesson</h4>
+                <h4>Hockeys for kids</h4>
+                <h4>Hockeys for Adult</h4>
+              </nav>
+            </div>
+      </footer>
+     <!-- This is the footer section end -->
+</body>
+</html>
